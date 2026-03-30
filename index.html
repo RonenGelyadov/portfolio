@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>רונן גליאדוב | מפתח פולסטאק</title>
+    <meta
+      name="description"
+      content="פורטפוליו של רונן גליאדוב — מפתח פולסטאק. פרויקטים, כישורים, וקישור ליצירת קשר."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background glow -->
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="#top" aria-label="חזרה לראש העמוד">
+          <span class="logo__mark">RG</span>
+          <span class="logo__text">רונן גליאדוב</span>
+        </a>
+
+        <nav class="nav__links" aria-label="ניווט ראשי">
+          <a href="#projects">פרויקטים</a>
+          <a href="#skills">כישורים</a>
+          <a href="#about">עליי</a>
+          <a class="btn btn--small" href="#contact">יצירת קשר</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <div class="pill">
+              <span class="dot" aria-hidden="true"></span>
+              זמין לפרויקטים • פולסטאק • Web
+            </div>
+
+            <h1>
+              היי, אני <span class="accent">רונן גליאדוב</span><br />
+              מפתח פולסטאק שבונה מוצרים שאנשים אוהבים.
+            </h1>
+
+            <p class="subtitle">
+              אני מתמחה בבניית אפליקציות מקצה לקצה — UI נקי, API יציב, ודאטה
+              מסודר. אוהב קוד פרקטי, ביצועים טובים, וחוויית משתמש שמרגישה
+              “זורמת”.
+            </p>
+
+            <div class="hero__cta">
+              <a class="btn" href="#projects">ראו פרויקטים</a>
+              <a class="btn btn--ghost" href="#contact">דברו איתי</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="meta-card">
+                <div class="meta-card__title">פוקוס</div>
+                <div class="meta-card__value">React • Node • APIs</div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-card__title">סטאק</div>
+                <div class="meta-card__value">Frontend + Backend + DB</div>
+              </div>
+              <div class="meta-card">
+                <div class="meta-card__title">גישה</div>
+                <div class="meta-card__value">פשוט, מהיר, מתוחזק</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="כרטיס פרופיל">
+            <img
+              class="profile-pic"
+              src="assets/ProfilePic.jpg"
+              alt="Profile picture"
+            />
+            <div class="profile">
+              <div class="avatar" aria-hidden="true">
+                <span>RG</span>
+              </div>
+              <div class="profile__text">
+                <div class="profile__name">רונן גליאדוב</div>
+                <div class="profile__role">Full-Stack Developer</div>
+              </div>
+            </div>
+
+            <div class="facts">
+              <div class="fact">
+                <div class="fact__label">מיקום</div>
+                <div class="fact__value">ישראל</div>
+              </div>
+              <div class="fact">
+                <div class="fact__label">התמחות</div>
+                <div class="fact__value">אפליקציות Web</div>
+              </div>
+              <div class="fact">
+                <div class="fact__label">מחפש</div>
+                <div class="fact__value">פרויקטים / משרה</div>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <a class="chip" href="#" aria-label="GitHub (להחליף קישור)"
+                >GitHub</a
+              >
+              <a class="chip" href="#" aria-label="LinkedIn (להחליף קישור)"
+                >LinkedIn</a
+              >
+              <a class="chip" href="#" aria-label="קורות חיים (להחליף קישור)"
+                >CV</a
+              >
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>פרויקטים נבחרים</h2>
+            <p>דוגמאות לאופן שבו אני חושב, בונה, ומסיים.</p>
+          </div>
+
+          <div class="grid">
+            <article class="project">
+              <div class="project__top">
+                <div class="badge">SaaS</div>
+                <div class="project__title">MinuteBoss</div>
+                <p class="project__desc">
+                  מערכת לניהול זמן ומשימות עם דשבורד נקי, סטטיסטיקות, וחוויית
+                  משתמש מהירה.
+                </p>
+              </div>
+              <div class="project__tags">
+                <span>React</span><span>Node</span><span>Postgres</span
+                ><span>Auth</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" aria-label="דמו (להחליף קישור)">דמו</a>
+                <a class="link" href="#" aria-label="קוד מקור (להחליף קישור)"
+                  >קוד</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__top">
+                <div class="badge">API</div>
+                <div class="project__title">TaskFlow Backend</div>
+                <p class="project__desc">
+                  REST API מודולרי עם שכבת הרשאות, ולידציה, ותיעוד — בנוי
+                  לתחזוקה.
+                </p>
+              </div>
+              <div class="project__tags">
+                <span>Express</span><span>JWT</span><span>Validation</span
+                ><span>Docs</span>
+              </div>
+              <div class="project__links">
+                <a class="link" href="#" aria-label="תיעוד (להחליף קישור)"
+                  >תיעוד</a
+                >
+                <a class="link" href="#" aria-label="קוד מקור (להחליף קישור)"
+                  >קוד</a
+                >
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="project__top">
+                <div class="badge">PC Game</div>
+                <div class="project__title">Pixel Combat</div>
+                <p class="project__desc">
+                  משחק דו-מימד עם דגש על אינטרקציה עם אויבים, מעבר סצנות
+                  וויזואליות ייחודית.
+                </p>
+              </div>
+              <div class="project__tags">
+                <span>Unity Engine</span><span>#C</span><span>OOP</span>
+              </div>
+              <div class="project__links">
+                <a
+                  class="link"
+                  href="https://roneng.itch.io/pixel-combat"
+                  target="_blank"
+                  >בואו נשחק</a
+                >
+                <a
+                  class="link"
+                  href="https://github.com/RonenGelyadov/Pixel-Combat"
+                  target="_blank"
+                  >קוד</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section ">
+        <div class="container">
+          <div class="section__head">
+            <h2>כישורים</h2>
+            <p>הדברים שאני יודע לעשות טוב — ולהביא לתוצאה.</p>
+          </div>
+
+          <div class="skills">
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>React, Hooks, State Management</li>
+                <li>UI ריספונסיבי, CSS מודרני, Animations</li>
+                <li>נגישות (ARIA) וביצועים</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js, Express, REST API's</li>
+                <li>Auth (JWT), הרשאות, ולידציה</li>
+                <li>Postgres / SQL, סכמות, אינדקסים</li>
+              </ul>
+            </div>
+
+            <div class="skill-card">
+              <h3>Unity & Game Development</h3>
+              <ul>
+                <li>C#, Architecture, Clean Code</li>
+                <li>Gameplay Loops, Systems & Game Feel</li>
+                <li>From Prototype to Playable Experience</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section section--alt">
+        <div class="container about">
+          <div class="about__text">
+            <h2>קצת עליי</h2>
+            <p>
+              אני נהנה לקחת רעיון ולהפוך אותו למוצר עובד: מסך התחברות, דשבורד,
+              API, בסיס נתונים — הכל מחובר כמו שצריך. אני מתחבר לעבודה מסודרת,
+              קוד קריא, ושיפורים קטנים שמייצרים “וואו” גדול למשתמש.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight">
+                <div class="highlight__title">מה תקבל איתי</div>
+                <div class="highlight__desc">
+                  תקשורת טובה, אחריות, וסגירה של קצוות.
+                </div>
+              </div>
+              <div class="highlight">
+                <div class="highlight__title">איך אני עובד</div>
+                <div class="highlight__desc">
+                  תכנון קצר → ביצוע מהיר → ליטוש → פריסה.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__panel">
+            <div class="panel">
+              <div class="panel__title">טכנולוגיות שאני אוהב</div>
+              <div class="chips">
+                <span class="chip">React</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">Postgres</span>
+                <span class="chip">REST</span>
+                <span class="chip">CSS</span>
+                <span class="chip">Unity</span>
+                <span class="chip">#C</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel__title">יעדים</div>
+              <p class="panel__text">
+                לבנות פרויקטים שנותנים ערך אמיתי, להיכנס לעומק של ארכיטקטורה,
+                ולשפר כל הזמן את חווית המשתמש.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>יצירת קשר</h2>
+            <p>רוצה לדבר על פרויקט או משרה? שלח הודעה קצרה.</p>
+          </div>
+
+          <div class="contact">
+            <div
+              class="form"
+              onsubmit="return false;"
+              aria-label="טופס יצירת קשר"
+            >
+              <label>
+                שם
+                <input type="text" placeholder="איך קוראים לך?" />
+              </label>
+              <label>
+                אימייל
+                <input type="email" placeholder="name@email.com" />
+              </label>
+              <label>
+                הודעה
+                <textarea rows="5" placeholder="על מה נדבר?"></textarea>
+              </label>
+              <button class="btn" type="submit">שליחה</button>
+            </div>
+
+            <div class="contact__side">
+              <div class="contact-card">
+                <div class="contact-card__title">אפשר גם ככה</div>
+                <!-- <a class="contact-link" href="mailto:roneng.tv@gmail.com.com"
+                  >roneng.tv@gmail.com.com</a
+                > -->
+                <div class="contact-row">
+                  <a
+                    class="chip"
+                    href="https://www.linkedin.com/in/ronen-gelyadov-202156230"
+                    target="_blank"
+                    aria-label="LinkedIn (להחליף קישור)"
+                    >LinkedIn</a
+                  >
+                  <a
+                    class="chip"
+                    href="https://github.com/RonenGelyadov"
+                    target="_blank"
+                    aria-label="GitHub (להחליף קישור)"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-card__title">מה כדאי לשלוח לי?</div>
+                <ul class="bullets">
+                  <li>מה המטרה / המוצר</li>
+                  <li>מה הדדליין (אם יש)</li>
+                  <li>סטאק / העדפות טכניות</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div>© <span id="year"></span> רונן גליאדוב</div>
+            <div class="footer__tiny">
+              נבנה ב־ HTML + CSS + JS — מהיר, נקי, ולעניין.
+            </div>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

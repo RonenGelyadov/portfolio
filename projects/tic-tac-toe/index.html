@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+      /* RESET */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+      /* BACKGROUND */
+      body {
+        height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      /* MAIN CARD */
+      .game-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        width: 350px;
+        text-align: center;
+      }
+      /* TITLE */
+      .top-bar h1 {
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      .subtitle {
+        font-size: 14px;
+        color: #94a3b8;
+        margin-bottom: 20px;
+      }
+      /* STATUS */
+      .status-box {
+        margin-bottom: 20px;
+      }
+      .current-player {
+        font-size: 32px;
+        font-weight: bold;
+        margin-top: 5px;
+        color: #38bdf8;
+      }
+      /* BOARD */
+      .board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      /* CELL */
+      .cell {
+        width: 90px;
+        height: 90px;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        transition: all 0.2s ease;
+      }
+      /* HOVER */
+      .cell:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.05);
+      }
+      /* INFO */
+      .game-info {
+        font-size: 14px;
+        color: #cbd5f5;
+        margin-bottom: 20px;
+      }
+      /* BUTTON */
+      .reset-btn {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background: #38bdf8;
+        color: black;
+        font-weight: bold;
+        transition: 0.2s;
+      }
+      .reset-btn:hover {
+        background: #0ea5e9;
+        transform: scale(1.05);
+      }
+    </style> -->
+    <title>X-O Game</title>
+  </head>
+  <body>
+    <main class="game-page">
+      <section class="game-card">
+        <div class="top-bar">
+          <h1>איקס עיגול</h1>
+          <p class="subtitle">משחק מודרני בעיצוב נקי ויוקרתי</p>
+        </div>
+        <div class="status-box">
+          <h2>תור נוכחי</h2>
+          <div id="currentTurn" class="current-player">X</div>
+        </div>
+        <div class="board">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+        <div class="game-info">
+          <p>לחץ על תא פנוי כדי להתחיל לשחק</p>
+        </div>
+        <div class="actions">
+          <button id="reset-btn" class="reset-btn">איפוס משחק</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+/* איפוס בסיסי ורקע כללי */
+html {
+  background-color: #f3f4f6;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
+  margin: 8vh auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-size: 2rem;
+}
+
+/* שדה קלט */
+#taskInput {
+  width: 73%;
+  padding: 12px 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  display: inline-block;
+  box-sizing: border-box; /* מוודא שהריווח לא מנפח את הרוחב */
+  vertical-align: middle; /* שומר על הקלט והכפתור באותו גובה */
+}
+
+#taskInput:focus {
+  border-color: #3b82f6;
+}
+
+/* כפתור הוספה */
+#addButton {
+  width: 25%;
+  padding: 12px;
+  margin-left: 1%;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+#addButton:hover {
+  background-color: #2563eb;
+}
+
+#addButton:active {
+  transform: scale(0.97);
+}
+
+/* רשימת המשימות */
+#tasksList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+#tasksList li {
+  background-color: #f9fafb;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#tasksList li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* הדיב הפנימי שה-JS מייצר */
+#tasksList li div {
+  align-items: center; /* ממרכז את הטקסט והכפתורים אנכית */
+  padding: 12px 15px;
+}
+
+/* הטקסט של המשימה */
+#tasksList li p {
+  margin: 0;
+  flex-grow: 1; /* דוחף את הכפתורים ימינה */
+  margin-right: 15px;
+  font-size: 16px;
+  color: #4b5563;
+  word-break: break-word;
+}
+
+/* עיצוב כללי לכפתורי עריכה ומחיקה */
+#tasksList li button {
+  padding: 8px 14px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  transition:
+    opacity 0.2s ease,
+    transform 0.1s ease;
+}
+
+#tasksList li button:hover {
+  opacity: 0.85;
+}
+
+#tasksList li button:active {
+  transform: scale(0.95);
+}
+
+/* כפתור עריכה (הכפתור הראשון בדיב) */
+#tasksList li button:nth-of-type(1) {
+  background-color: #f59e0b; /* כתום מודרני */
+}
+
+/* כפתור מחיקה (הכפתור השני בדיב) */
+#tasksList li button:nth-of-type(2) {
+  background-color: #ef4444; /* אדום מודרני */
+}
