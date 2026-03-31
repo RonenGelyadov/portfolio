@@ -22,12 +22,17 @@ startBtn.addEventListener("click", initializeGame);
 // Initialize the game and get all the cards ready for play
 async function initializeGame() {
   loading.classList.remove("hide");
+
   startComment?.remove();
   await getImagesData();
   initializeCards();
+
   selectedImgUrl = "";
   points = 0;
+  score.innerText = points;
+
   loading.classList.add("hide");
+
   canClick = true;
 }
 

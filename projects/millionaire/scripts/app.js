@@ -67,7 +67,7 @@ function checkAnswer(answer) {
     messagePlayer("תשובה נכונה !", 1, 2);
     setTimeout(nextQuestion, 2000);
   } else {
-    messagePlayer("אופס, טעית", 2);
+    messagePlayer('אופס, טעית. לחץ "שחק שוב"', 2);
     startBtn.innerText = "שחק שוב";
   }
 }
@@ -84,6 +84,7 @@ function messagePlayer(message, classIndex, sec) {
   commentSlot.classList.value = styleClasses[classIndex];
   commentSlot.innerText = message;
 
+  // if sec not provided, the comment will not disappear
   if (!sec) return;
 
   setTimeout(() => {
