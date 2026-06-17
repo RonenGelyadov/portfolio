@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>משחק הזיכרון</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>משחק הזיכרון</h1>
+      <div class="stats">
+        <span>נקודות: <span id="score">0</span></span>
+        <button id="restart-btn">משחק חדש</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="game-board" class="game-board">
+        <p id="startComment">לחץ "משחק חדש" על מנת להתחיל</p>
+      </div>
+    </main>
+
+    <div id="loading" class="hide">
+      <span>טוען תמונות</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

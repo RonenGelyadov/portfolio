@@ -1,0 +1,179 @@
+
+:root {
+  --primary: #e94560;
+  --bg-dark: #1a1a2e;
+  --panel-dark: #16213e;
+  --accent: #0f3460;
+  --text-white: #ffffff;
+  --pressed: #0a213d;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  direction: ltr;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#game {
+  background-color: var(--panel-dark);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
+}
+
+
+select,
+#playBtn {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid var(--accent);
+  background-color: var(--bg-dark);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+#playBtn {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#playBtn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+}
+
+
+#hangman-paint {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#hangman-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+#word {
+  display: flex;
+  gap: clamp(5px, 2vw, 10px);
+  margin: 20px 0;
+  min-height: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.char {
+  width: clamp(25px, 7vw, 35px);
+  height: 45px;
+  border-bottom: 3px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.2rem, 5vw, 2rem);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+#keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.key {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key:hover:not(.pressed) {
+  background-color: var(--primary);
+}
+
+.key.pressed {
+  background-color: var(--pressed);
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: scale(0.95);
+}
+
+
+@media (max-width: 600px) {
+  #game {
+    padding: 1.5rem 1rem;
+  }
+
+  #hangman-paint {
+    height: 180px;
+  }
+
+  #keyboard {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+
+  .key {
+    height: 40px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 380px) {
+  #keyboard {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  .char {
+    height: 35px;
+  }
+}
