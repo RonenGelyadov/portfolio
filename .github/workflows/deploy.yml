@@ -27,13 +27,18 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-level: 20 # גרסת הנוד שלך
+          node-version: 20 # תיקנתי כאן קלות מ-node-level ל-node-version הסטנדרטי
           cache: "npm"
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Project
+        # כאן קורה הקסם - אנחנו מזריקים את ה-Secrets שהגדרת ב-GitHub לתוך ה-Build של Vite
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
         run: npm run build
 
       - name: Upload artifact
