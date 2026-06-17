@@ -33,6 +33,8 @@ export const sendEmail = async (formData: Omit<ContactForm, "time">) => {
 
     if (result.status === 200 || result.text === "OK") {
       return "פנייתך התקבלה";
+    } else {
+      return "שגיאה בשליחת הפניה";
     }
   } catch (err) {
     console.log(err);
