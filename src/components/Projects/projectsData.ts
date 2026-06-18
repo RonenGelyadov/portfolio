@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     image: "images/projects/tic-tac-toe.png",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Games",
-    demoUrl: "/projects/tic-tac-toe/index.html",
+    demoUrl: "projects/tic-tac-toe/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/tic-tac-toe`,
   },
   {
@@ -31,7 +31,7 @@ export const projectsData: Project[] = [
     image: "images/projects/millionaire.png",
     tags: ["HTML", "CSS", "JavaScript", "ES Modules"],
     category: "Games",
-    demoUrl: "/projects/millionaire/index.html",
+    demoUrl: "projects/millionaire/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/millionaire`,
   },
   {
@@ -42,7 +42,7 @@ export const projectsData: Project[] = [
     image: "images/projects/memory-game-v2.png",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Games",
-    demoUrl: "/projects/memory-game/index.html",
+    demoUrl: "projects/memory-game/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/memory-game`,
   },
   {
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
     image: "images/projects/hangman.png",
     tags: ["HTML", "CSS", "JavaScript", "jQuery"],
     category: "Games",
-    demoUrl: "/projects/hangman/index.html",
+    demoUrl: "projects/hangman/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/hangman`,
   },
   {
@@ -65,7 +65,7 @@ export const projectsData: Project[] = [
       "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop",
     tags: ["HTML", "CSS", "JavaScript", "Fetch API"],
     category: "Web Apps",
-    demoUrl: "/projects/countries-api/index.html",
+    demoUrl: "projects/countries-api/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/countries-api`,
   },
   {
@@ -77,7 +77,7 @@ export const projectsData: Project[] = [
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop",
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Web Apps",
-    demoUrl: "/projects/todoList/index.html",
+    demoUrl: "projects/todoList/index.html",
     githubUrl: `${GITHUB_REPO_URL}/tree/main/public/projects/todoList`,
   },
 ];
