@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* HSL variables for color palette */
@@ -16,8 +16,8 @@
   --text-main: hsl(0, 0%, 95%);
   --text-muted: hsl(240, 5%, 65%);
 
-  --font-sans: "Inter", sans-serif;
-  --font-display: "Outfit", sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
 }
 
 body.light-mode {
@@ -41,6 +41,7 @@ body.light-mode {
 
 html {
   scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
 body {
@@ -100,11 +101,11 @@ a {
   background: var(--bg-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(240, 10%, 20%);
+  background: hsl(240, 10%, 20%, 0.4);
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(240, 10%, 30%);
+  background: hsl(240, 10%, 30%, 0.5);
 }
 
 /* Animations */

@@ -7,14 +7,12 @@
   padding: 1.5rem 0;
   transition: all 0.3s ease;
   direction: rtl;
+  border: none;
 }
 
 .navbar.scrolled {
   padding: 1rem 0;
   border-radius: 0;
-  border-left: none;
-  border-right: none;
-  border-top: none;
 }
 
 .nav-container {
@@ -90,7 +88,7 @@
   border-radius: 0 0 24px 24px;
   border-top: none;
   background: var(--bg-color);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-drawer.open {
