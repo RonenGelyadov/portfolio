@@ -16,17 +16,19 @@ function App() {
         <Projects />
         <Contact />
       </main>
-      
-      <footer style={{
-        textAlign: 'center',
-        padding: '2rem',
-        color: 'var(--text-muted)',
-        borderTop: '1px solid var(--card-border)',
-        fontSize: '0.9rem',
-        direction: 'rtl'
-      }}>
+
+      <footer
+        style={{
+          textAlign: 'center',
+          padding: '2rem',
+          color: 'var(--text-muted)',
+          borderTop: '1px solid var(--card-border)',
+          fontSize: '0.9rem',
+          direction: 'rtl',
+        }}
+      >
         <p>© {new Date().getFullYear()} רונן. כל הזכויות שמורות.</p>
-        <p style={{ marginTop: '0.5rem', opacity: 0.7 }}>
+        <p dir="ltr" style={{ marginTop: '0.5rem', opacity: 0.7 }}>
           Built with React & Vite. Designed with ❤️
         </p>
       </footer>

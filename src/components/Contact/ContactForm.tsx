@@ -1,16 +1,16 @@
-import { Send } from "lucide-react";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import type { ContactForm } from "../../types/ContactForm";
-import { sendEmail } from "../../services/emailJsService";
+import { Send } from 'lucide-react';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import type { ContactForm } from '../../types/ContactForm';
+import sendEmail from '../../services/emailJsService';
 
 export default function ContactForm() {
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const { register, handleSubmit, reset } = useForm<ContactForm>();
 
-  const onFormSubmit = async (data: Omit<ContactForm, "time">) => {
+  const onFormSubmit = async (data: Omit<ContactForm, 'time'>) => {
     reset();
     setIsLoading(true);
 
@@ -22,12 +22,12 @@ export default function ContactForm() {
 
   return (
     <div className="contact-form-container glass">
-      <p>{isLoading ? "מבצע שליחת פניה" : message}</p>
+      <p>{isLoading ? 'מבצע שליחת פניה' : message}</p>
       <form className="contact-form" onSubmit={handleSubmit(onFormSubmit)}>
         <div className="form-group">
           <label htmlFor="name">שם מלא</label>
           <input
-            {...register("name")}
+            {...register('name')}
             type="text"
             id="name"
             placeholder="הכנס שם מלא"
@@ -38,7 +38,7 @@ export default function ContactForm() {
         <div className="form-group">
           <label htmlFor="email">אימייל</label>
           <input
-            {...register("reply_to")}
+            {...register('reply_to')}
             type="email"
             id="email"
             placeholder="you@example.com"
@@ -49,7 +49,7 @@ export default function ContactForm() {
         <div className="form-group">
           <label htmlFor="subject">נושא</label>
           <input
-            {...register("title")}
+            {...register('title')}
             type="text"
             id="subject"
             placeholder="באיזה נושא נדבר?"
@@ -59,7 +59,7 @@ export default function ContactForm() {
         <div className="form-group">
           <label htmlFor="message">הודעה</label>
           <textarea
-            {...register("message")}
+            {...register('message')}
             id="message"
             rows={5}
             placeholder="ספר/י לי קצת על הפרויקט..."

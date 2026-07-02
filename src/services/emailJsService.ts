@@ -1,5 +1,5 @@
-import emailjs from "@emailjs/browser";
-import type { ContactForm } from "../types/ContactForm";
+import emailjs from '@emailjs/browser';
+import type { ContactForm } from '../types/ContactForm';
 
 const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = {
   SERVICE_ID: import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -7,13 +7,13 @@ const { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } = {
   PUBLIC_KEY: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 };
 
-export const sendEmail = async (formData: Omit<ContactForm, "time">) => {
+const sendEmail = async (formData: Omit<ContactForm, 'time'>) => {
   const now = new Date();
 
-  const hours = String(now.getHours()).padStart(2, "0");
-  const minutes = String(now.getMinutes()).padStart(2, "0");
-  const day = String(now.getDate()).padStart(2, "0");
-  const month = String(now.getMonth() + 1).padStart(2, "0");
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
   const year = String(now.getFullYear()).slice(-2);
 
   const formattedDate = `${hours}:${minutes} ${day}/${month}/${year}`;
@@ -31,13 +31,15 @@ export const sendEmail = async (formData: Omit<ContactForm, "time">) => {
       PUBLIC_KEY,
     );
 
-    if (result.status === 200 || result.text === "OK") {
-      return "פנייתך התקבלה";
+    if (result.status === 200 || result.text === 'OK') {
+      return 'פנייתך התקבלה';
     } else {
-      return "שגיאה בשליחת הפניה";
+      return 'שגיאה בשליחת הפניה';
     }
   } catch (err) {
     console.log(err);
-    return "שגיאה בשליחת הפניה";
+    return 'שגיאה בשליחת הפניה';
   }
 };
+
+export default sendEmail;
